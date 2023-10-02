@@ -8,7 +8,6 @@
     <artifactId>ct5171_test1Maven</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <dependencies>
         <dependency>
             <groupId>org.codehaus.mojo</groupId>
@@ -33,7 +32,17 @@
                 <mainClass>org.example.Main</mainClass>
             </configuration>
         </plugin>
-
+        <plugin>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <mainClass>org.example.Main</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
     </plugins>
     </build>
 
