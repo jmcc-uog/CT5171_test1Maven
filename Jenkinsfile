@@ -27,7 +27,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts allowEmptyArchive: true,
+            archiveArtifacts
                 artifacts: '**/*.jar'
         }
     }
