@@ -27,8 +27,8 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts
-                artifacts: '**/CT5171*.jar'
+            archiveArtifacts allowEmptyArchive: true,
+                artifacts: '**/CT5171_test1Maven*.jar'
         }
     }
 }
